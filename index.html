@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Otros metadatos y enlaces -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div> 
+        <div class="contenedor-imagen">
+            <img src="/ing/OIG3 (1).jpg" alt="Descripción de la imagen">
+        </div>
+    </div>
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>En un mundo cada vez más digitalizado, la confiabilidad y eficiencia de nuestras computadoras se vuelven
+                fundamentales. En nuestro sitio, nos dedicamos a ofrecer soluciones integrales para garantizar el óptimo
+                funcionamiento de tus dispositivos informáticos.
+
+                Desde diagnósticos precisos hasta reparaciones especializadas, nuestro equipo de expertos está aquí para
+                resolver cualquier problema que puedas enfrentar con tu PC. Ya sea que necesites una actualización de
+                hardware, eliminación de virus, optimización del sistema o simplemente consejos de mantenimiento,
+                estamos comprometidos a brindarte un servicio confiable y profesional.
+
+                Explora nuestros servicios y descubre cómo podemos ayudarte a mantener tu PC en su mejor estado, para
+                que puedas disfrutar de un rendimiento óptimo y una experiencia informática sin preocupaciones.
+
+                ¡Confía en nosotros para cuidar de tu computadora y mantenerla funcionando como nueva!
+
+            </p>
+        </section>
+
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p> Servicios de Reparación y Mantenimiento de PC
+
+                En un mundo cada vez más dependiente de la tecnología, tener un equipo de computadora confiable es
+                esencial para el éxito personal y profesional. Sin embargo, incluso los sistemas más avanzados pueden
+                experimentar problemas en algún momento. Es en esos momentos de necesidad que nuestros servicios de
+                reparación y mantenimiento de PC entran en juego.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>LEn [Nombre de la Empresa], nos enorgullece ser líderes en el campo de la reparación y mantenimiento de
+                computadoras. Desde nuestros modestos comienzos, nos hemos dedicado a proporcionar soluciones confiables
+                y efectivas para todas las necesidades informáticas.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contactoForm">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <div>
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="consulta">Consulta</option>
+                        <option value="comentario">Comentario</option>
+                        <option value="queja">Queja</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" id="suscripcion" name="suscripcion">
+                    <label for="suscripcion">Suscribirme al boletín</label>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contacto-footer">
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Mi Sitio Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
