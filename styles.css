@@ -115,7 +115,7 @@ section {
 }
 
 .tituloContacto{
-    padding: 1em;
+    padding: 0.5em;
     text-align: start;
 
 }
@@ -268,7 +268,7 @@ footer a i{
 
 
 /* Estilos responsivos */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1024px) {
     /* header {
         display: flex;
         justify-content: space-between;
