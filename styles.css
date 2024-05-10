@@ -5,6 +5,9 @@ body {
     padding: 0px;
 }
 
+
+/* HEADER */
+
 header {
     /* background-color: #333;
     color: white; */
@@ -67,10 +70,13 @@ nav ul li a:hover {
 /*a {
     color: #ccc;
 }*/
+
+/* MAIN */
+
 main {
-    padding-bottom: 2em;
-    display: grid;
-    justify-content: center; 
+    /* padding-bottom: 2em; */
+    /* display: grid;
+    justify-content: center;  */
 }
 
 section {
@@ -102,48 +108,69 @@ section {
 }
 
 
+#contacto{
+    height: 70%;
+    /* margin-bottom: 10em;
+    margin-top: 8em; */
+}
+
+.tituloContacto{
+    padding: 0.5em;
+    text-align: start;
+
+}
+
+.seccionContacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.contacto1{
+     width: 30%;
+    /*height: auto; */
+    
+}
+.contacto2{
+    width: auto;
+}
+
+.contacto3{
+    width: 40%;
+    height: auto;
+}
+
+.contacto1, .contacto2{
+    padding: auto;
+}
+
+.contacto2 {
+justify-content: center;
+    font-size: 1em;
+    
+
+}
+/* .contacto2 div{
+    height: auto;
+    align-content: space-around;
+} */
+
+.iframe{
+    width: 100%;
+    height: 100%;
+}
+
 
 h2 {
     text-decoration: solid;
     text-align: center;
 }
 
-footer {
-    background-color: #333;
-    color: rgb(232, 225, 225);
-    padding: 2em;
-    text-align: center;
-}
-
-footer a i{
-    color: rgb(230, 237, 230);
-}
-
-.fab.fa-youtube:hover{
-    color: red;
-}
-
-.fab.fa-whatsapp:hover{
-    color:green;
-}
-
-.fab.fa-linkedin:hover{
-    color:rgb(31, 123, 176)
-}
-
-.fab.fa-twitter:hover{
-    color:blue;
-}
-
-.contacto-footer{
-    font-size: 2.5em;
-}
-
-
 
 /* Estilos del formulario de contacto */
 form {
-    width: 35em;
+    width: 100%;
     /* margin: 0 auto; */
 }
 
@@ -189,6 +216,10 @@ form button {
 
 }
 
+.textolabel{
+    font-size: 0.8rem;;
+}
+
 /* .selectMotivo{
     margin-top: 0.1em;
 } */
@@ -197,8 +228,47 @@ form button {
 } */
 
 
+
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+    color: rgb(232, 225, 225);
+    padding: 2em;
+    text-align: center;
+}
+
+footer a i{
+    color: rgb(230, 237, 230);
+}
+
+.fab.fa-youtube:hover{
+    color: red;
+}
+
+.fab.fa-whatsapp:hover{
+    color:green;
+}
+
+.fab.fa-linkedin:hover{
+    color:rgb(31, 123, 176)
+}
+
+.fab.fa-twitter:hover{
+    color:blue;
+}
+
+.contacto-footer{
+    font-size: 2.5em;
+}
+
+
+
+
+
 /* Estilos responsivos */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1024px) {
     /* header {
         display: flex;
         justify-content: space-between;
@@ -213,16 +283,48 @@ form button {
         margin-right: 0;
     } */
 
-    main {
+    /* main {
         display: grid;
         justify-content: center;
         flex-wrap: wrap;
-    }
+    } */
 
     /* section {
         flex: 1;
         margin-right: 20px;
     } */
+
+
+    .seccionContacto{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }   
+    .contacto3{
+        width: 100%;
+        margin-bottom: 3em;
+        height: 50vh;
+    }
+
+    .contacto2{
+        width: 30%;
+        margin-bottom: 3em;
+    }
+
+    .contacto1{
+        width: 60%;
+        margin-bottom: 3em;
+    }
+    
+    .tituloContacto{
+        padding: 0.2em;
+
+        text-align: start;
+    
+    }
+
+
 }
 
 @media screen and (min-width: 992px) {
@@ -235,4 +337,29 @@ form button {
     /* main {
         padding: 20px 100px;
     } */
+}
+
+@media screen and (max-width: 767px) {
+    .seccionContacto{
+        height: 100%;
+        display: block;
+        
+    }   
+    .contacto1, .contacto2, .contacto3{
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+    .contacto3{
+        height: 50vh;
+    }
+    
+    .tituloContacto{
+        padding: 0.2em;
+
+        text-align: start;
+    
+    }
+
+
 }
