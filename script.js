@@ -1,4 +1,3 @@
-// Espera a que el DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", function() {
     // Obtener el formulario y los campos
     const form = document.getElementById("contactoForm");
@@ -37,3 +36,4 @@ document.addEventListener("DOMContentLoaded", function() {
         return emailRegex.test(email);
     }
 });
+
