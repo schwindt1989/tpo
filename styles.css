@@ -89,6 +89,10 @@ h1 {
     height: 10%;
 }
 
+.text-servicio{
+    text-align: center;
+}
+
 .seccionServicio {
   width: 100%;
   height: 100%;
