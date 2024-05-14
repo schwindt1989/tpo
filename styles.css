@@ -21,41 +21,6 @@ header {
     height: auto;
 }
 
-/* .contenedor-imagen {
-    background-color: aqua;
-    width: 100%; */
-    /* height: 90vh; Esto es solo un ejemplo, puedes ajustar la altura según sea necesario */
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
-    
-} */
-
-/* .contenedor-imagen img { */
-    /* width: 100%; La imagen ocupará todo el ancho del contenedor */
-    /* height: auto; Esto asegura que la altura se ajuste automáticamente para mantener la relación de aspecto original */
-    /* display: block; Elimina cualquier espacio extra alrededor de la imagen */
-/* } */
-
-/* .contenedor-imagen img { */
-    /* max-width: 100%; Para asegurarse de que la imagen no desborde su contenedor */
-    /* max-height: 100%; Para asegurarse de que la imagen no desborde su contenedor */
-/* } */
-
-
-nav ul {
-    /* list-style-type: none;
-    margin: 0;
-    padding: 0; */
-}
-
-nav ul li {
-    /* display: inline;
-    margin-right: 20px; Espaciado entre elementos de la lista */
-    /* padding: 10px; */
-}
-
 nav ul li a {
     text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
     color: #b4b4b4; /* Color del texto */
@@ -67,9 +32,7 @@ nav ul li a:hover {
     color: #ff0000; /* Cambia el color del texto al pasar el cursor sobre el enlace */
 }
 
-/*a {
-    color: #ccc;
-}*/
+
 
 /* MAIN */
 
@@ -87,8 +50,14 @@ section {
 }
 
 #servicios, #acerca, #contacto  {
+    height: 80vh;
     padding: 3rem;
+   
+
 }
+
+
+/* SECCION INICIO */
 
 #inicio{
     display: flex;
@@ -121,261 +90,8 @@ section {
 }
 
 
-#contacto{
-    height: 70%;
-    /* margin-bottom: 10em;
-    margin-top: 8em; */
-}
 
-.tituloContacto{
-    padding: 0.5em;
-    text-align: start;
-
-}
-
-.seccionContacto{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1%;
-}
-
-.contacto1{
-     width: 30%;
-    /*height: auto; */
-    
-}
-.contacto2{
-    width: auto;
-}
-
-.contacto3{
-    width: 40%;
-    height: auto;
-}
-
-.contacto1, .contacto2{
-    padding: auto;
-}
-
-.contacto2 {
-justify-content: center;
-    font-size: 1em;
-    
-
-}
-/* .contacto2 div{
-    height: auto;
-    align-content: space-around;
-} */
-
-.iframe{
-    width: 100%;
-    height: 100%;
-}
-
-
-h2 {
-    text-decoration: solid;
-    text-align: center;
-}
-
-
-/* Estilos del formulario de contacto */
-form {
-    width: 100%;
-    /* margin: 0 auto; */
-}
-
-/* form div {
-    margin-bottom: 1em;
-} */
-
-/* form label {
-    display: block;
-} */
-
-#nombre, #email,
-form select {
-    width: 100%;
-    height: 2.5em;
-    margin-bottom: 1em;
-    /* box-sizing: border-box; */
-    border: 1px solid #8d8d8d;
-    border-radius: 0.1em;
-}
-
-form textarea{
-    /* padding-bottom: 5em; */
-    width: 100%;
-    height: 10em;
-    /* margin-bottom: 1em; */
-    /* box-sizing: border-box; */
-    border: 1px solid #8d8d8d;
-    border-radius: 4px;
-}
-
-form button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.checklabel{
-    display: inline-block;
-
-}
-
-.textolabel{
-    font-size: 0.8rem;;
-}
-
-/* .selectMotivo{
-    margin-top: 0.1em;
-} */
-/* #suscripcion{
-    display: inline-block;
-} */
-
-
-
-
-/* FOOTER */
-
-footer {
-    background-color: #333;
-    color: rgb(232, 225, 225);
-    padding: 2em;
-    text-align: center;
-}
-
-footer a i{
-    color: rgb(230, 237, 230);
-}
-
-.fab.fa-youtube:hover{
-    color: red;
-}
-
-.fab.fa-whatsapp:hover{
-    color:green;
-}
-
-.fab.fa-linkedin:hover{
-    color:rgb(31, 123, 176)
-}
-
-.fab.fa-twitter:hover{
-    color:blue;
-}
-
-.contacto-footer{
-    font-size: 2.5em;
-}
-
-
-
-
-
-/* Estilos responsivos */
-@media screen and (max-width: 1024px) {
-    /* header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    } */
-
-    /* nav ul {
-        display: flex;
-    }
-
-    nav ul li {
-        margin-right: 0;
-    } */
-
-    /* main {
-        display: grid;
-        justify-content: center;
-        flex-wrap: wrap;
-    } */
-
-    /* section {
-        flex: 1;
-        margin-right: 20px;
-    } */
-
-
-    .seccionContacto{
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        
-    }   
-    .contacto3{
-        width: 100%;
-        margin-bottom: 3em;
-        height: 50vh;
-    }
-
-    .contacto2{
-        width: 30%;
-        margin-bottom: 3em;
-    }
-
-    .contacto1{
-        width: 60%;
-        margin-bottom: 3em;
-    }
-    
-    .tituloContacto{
-        padding: 0.2em;
-
-        text-align: start;
-    
-    }
-
-
-}
-
-@media screen and (min-width: 992px) {
-    /* main {
-        padding: 20px 50px;
-    } */
-}
-
-@media screen and (min-width: 1200px) {
-    /* main {
-        padding: 20px 100px;
-    } */
-}
-
-@media screen and (max-width: 767px) {
-    .seccionContacto{
-        height: 100%;
-        display: block;
-        
-    }   
-    .contacto1, .contacto2, .contacto3{
-        width: 100%;
-        margin-bottom: 3em;
-    }
-
-    .contacto3{
-        height: 50vh;
-    }
-    
-    .tituloContacto{
-        padding: 0.2em;
-
-        text-align: start;
-    
-    }
-
-
-}
+/* SECCION SERVICIO */
 
 .seccionServicio{
     height: 50%;
@@ -398,6 +114,10 @@ footer a i{
     text-align: center;
     
 }
+
+
+/* SECCION ACERCA */
+
 
 .contenedor-acerca{
     
@@ -450,6 +170,225 @@ footer a i{
 .slider-frame img {
 	width: 100%;
 }
+
+
+/* SECCION CONTACTO */
+
+
+#contacto{
+    height: 70%;
+    /* margin-bottom: 10em;
+    margin-top: 8em; */
+}
+
+.tituloContacto{
+    padding: 0.5em;
+    text-align: start;
+
+}
+
+.seccionContacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.contacto1{
+     width: 30%;
+    /*height: auto; */
+    
+}
+.contacto2{
+    width: auto;
+}
+
+.contacto3{
+    width: 40%;
+    height: auto;
+}
+
+.contacto1, .contacto2{
+    padding: auto;
+}
+
+.contacto2 {
+justify-content: center;
+    font-size: 1em;
+    
+
+}
+
+
+.iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+h2 {
+    text-decoration: solid;
+    text-align: center;
+}
+
+
+/* ESTILO DE FORMULARIO DE CONTACTO */
+
+
+
+form {
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+
+
+#nombre, #email,
+form select {
+    width: 100%;
+    height: 2.5em;
+    margin-bottom: 1em;
+    /* box-sizing: border-box; */
+    border: 1px solid #8d8d8d;
+    border-radius: 0.1em;
+}
+
+form textarea{
+    /* padding-bottom: 5em; */
+    width: 100%;
+    height: 10em;
+    /* margin-bottom: 1em; */
+    /* box-sizing: border-box; */
+    border: 1px solid #8d8d8d;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.checklabel{
+    display: inline-block;
+
+}
+
+.textolabel{
+    font-size: 0.8rem;;
+}
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+    color: rgb(232, 225, 225);
+    padding: 2em;
+    text-align: center;
+}
+
+footer a i{
+    color: rgb(230, 237, 230);
+}
+
+.fab.fa-youtube:hover{
+    color: red;
+}
+
+.fab.fa-whatsapp:hover{
+    color:green;
+}
+
+.fab.fa-linkedin:hover{
+    color:rgb(31, 123, 176)
+}
+
+.fab.fa-twitter:hover{
+    color:blue;
+}
+
+.contacto-footer{
+    font-size: 2.5em;
+}
+
+
+
+
+
+/* ESTILOS RESPONSIVOS */
+
+
+@media screen and (max-width: 1024px) {
+
+
+    .seccionContacto{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }   
+    .contacto3{
+        width: 100%;
+        margin-bottom: 3em;
+        height: 50vh;
+    }
+
+    .contacto2{
+        width: 30%;
+        margin-bottom: 3em;
+    }
+
+    .contacto1{
+        width: 60%;
+        margin-bottom: 3em;
+    }
+    
+    .tituloContacto{
+        padding: 0.2em;
+
+        text-align: start;
+    
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .seccionContacto{
+        height: 100%;
+        display: block;
+        
+    }   
+    .contacto1, .contacto2, .contacto3{
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+    .contacto3{
+        height: 50vh;
+    }
+    
+    .tituloContacto{
+        padding: 0.2em;
+
+        text-align: start;
+    
+    }
+
+
+}
+
+    
 
 @keyframes slide {
 	0% {margin-left: 0;}
