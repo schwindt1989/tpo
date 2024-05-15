@@ -48,7 +48,7 @@ section {
 #servicios,
 #acerca,
 #contacto {
-  height: 80vh;
+  height: 80%;
   padding: 3rem;
 }
 
@@ -499,6 +499,14 @@ footer a i {
 
     .servicios p{
         padding-top: .5em;
+    }
+
+    .text-servicio{
+        max-width: 100%;
+    }
+
+    .texto-servicio h1{
+        font-size: 5vh;
     }
 
 }
